@@ -1,0 +1,104 @@
+header{
+    align-items: center;
+    border: 1PX solid magenta;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2.4rem 2.4rem 2rem;
+    
+}
+.hamburguer-logo--group{
+    align-items: center;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+
+}
+
+.hamburguer{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.hamburguer .line{
+    background-color: var(--dark-blue);
+    width: 1.5rem;
+    height: 0.3rem;
+}
+.hiden{
+    display: none;
+}
+.menu{
+    
+    
+    background-color: var(--black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+}
+
+.slide-menu{
+    background-color: var(--white);
+    height: 100%;
+    width: 65vw;
+    padding: 2.3rem;
+}
+
+.slide-menu img{
+    transition: 0.5s ease;
+}
+.slide-menu img:hover{
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.slide-menu ul{
+   
+    font-size: 1.8rem;
+    font-weight: 700;
+    list-style: none;
+    margin-top: 5rem;
+   
+}
+
+.slide-menu a{
+    color: var(--black);
+    display: block;
+    text-decoration: none;
+    padding: 2.3rem 0;
+}
+
+.slide-menu a:active, a:visited{
+    color: var(--very-dark-blue);
+    text-decoration: unset;
+}
+.slide-menu a:hover{
+    text-decoration: underline;
+}
+
+.cart-avatar--group{
+    align-items: center;
+    border: 1px solid green;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+}
+.btn-cart{
+    cursor: pointer;
+}
+.avatar{
+    border: 2px solid transparent;
+    cursor: pointer;
+    width: 2.5rem;
+}
+
+.avatar:hover{
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+}

@@ -9,21 +9,53 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="./assets/CSS/styles.css" rel="stylesheet">
+  <link href="./assets/CSS/styles.css"  rel="stylesheet">
+  <link href="./assets/CSS/general.css" rel="stylesheet">
+  <link href="./assets/CSS/header.css"  rel="stylesheet" >
   <title>E-commerce product page</title>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <div class="hamburguer-logo--group">
+        <div class="hamburguer">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+
+        <a href="#"><img src="./assets/images/logo.svg" alt="Logo"></a>
+        
+        <nav class="menu hiden">
+          <div class="slide-menu">
+            <img src="./assets/images/icon-close.svg" alt="icon close">
+            <ul>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          </div>
+          <div class="cart-avatar--group">
+            <div class="btnCart">
+              <img src="./assets/images/icon-cart.svg" alt="cart icon">
+              <div class="cart-count"></div>
+            </div>
+    
+            <img class="avatar"src="./assets/images/image-avatar.png" alt=" image avatar">
+    
+          </div>
+
+      </div>
+
+      
+    </header>
+  </div>
+  <!--
   <main>
     <section>
       <h1>
@@ -40,7 +72,7 @@
         <span> 50%</span>
         <span>$250.00</span>
       </div>
-      
+
       0
       <button> Add to cart</button>
     </section>

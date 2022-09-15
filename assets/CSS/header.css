@@ -1,6 +1,5 @@
 header{
     align-items: center;
-    border: 1PX solid magenta;
     display: flex;
     justify-content: space-between;
     padding: 2rem 2.4rem 2.4rem 2rem;
@@ -8,7 +7,6 @@ header{
 }
 .hamburguer-logo--group{
     align-items: center;
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     gap: 1.6rem;
@@ -17,6 +15,7 @@ header{
 
 .hamburguer{
     align-items: center;
+    cursor: pointer;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -47,6 +46,7 @@ header{
     height: 100%;
     width: 65vw;
     padding: 2.3rem;
+    z-index: 1;
 }
 
 .slide-menu img{
@@ -83,7 +83,6 @@ header{
 
 .cart-avatar--group{
     align-items: center;
-    border: 1px solid green;
     display: flex;
     gap: 2rem;
     justify-content: space-between;
@@ -91,7 +90,20 @@ header{
 }
 .btn-cart{
     cursor: pointer;
+    position: relative;
 }
+
+.cart-count{
+    font-weight: 700;
+    background-color: var(--orange);
+    border-radius: 100%;
+    color: var(--white);
+    padding: .2rem;
+    position: absolute;
+    top: -70%;
+    left: 1rem;
+}
+
 .avatar{
     border: 2px solid transparent;
     cursor: pointer;

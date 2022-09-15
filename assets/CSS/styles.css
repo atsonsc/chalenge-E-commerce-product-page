@@ -1,8 +1,8 @@
 :root{
     --very-dark-blue: hsl(220, 13%, 13%);
     --dark-blue: hsl(219, 9%, 45%);
-    --grayish-blue: hsl(220, 14%, 75%);
-    --light-grayish-blue: hsl(223, 64%, 98%);
+    --gravish-blue: hsl(220, 14%, 75%);
+    --grayish-blue: hsl(223, 64%, 98%);
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%,0.75);
     --orange: hsl(26, 100%, 55%);
@@ -12,6 +12,5 @@
 
 
 
-@import url(../CSS/general.css);
-@import url(../CSS/header.css);
+
 

@@ -1,0 +1,33 @@
+.lightbox{
+    position: relative;
+    z-index: -1;
+}
+
+.lightbox img{
+    width: 100%;
+}
+
+.arrow{
+   
+    background-color: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    padding:  1rem;
+    position: absolute;
+    top: 40%;
+    width: 3rem;
+}
+
+.previous{
+    left: 1rem;
+}
+.previous:hover{
+    left: 0.2rem;
+}
+.next{
+    right: 1rem;
+}
+
+.next:hover{
+    right: 0.2rem;
+}

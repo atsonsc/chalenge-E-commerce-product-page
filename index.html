@@ -9,9 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="./assets/CSS/styles.css"  rel="stylesheet">
+  <link href="./assets/CSS/styles.css" rel="stylesheet">
   <link href="./assets/CSS/general.css" rel="stylesheet">
-  <link href="./assets/CSS/header.css"  rel="stylesheet" >
+  <link href="./assets/CSS/header.css" rel="stylesheet">
+  <link href="./assets/CSS/lightbox.css" rel="stylesheet">
+  <link href="./assets/CSS/product.css" rel="stylesheet">
   <title>E-commerce product page</title>
 </head>
 
@@ -19,17 +21,17 @@
   <div class="container">
     <header>
       <div class="hamburguer-logo--group">
-        <div class="hamburguer">
+        <div class="hamburguer" id="hamburguer">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
         </div>
 
         <a href="#"><img src="./assets/images/logo.svg" alt="Logo"></a>
-        
+
         <nav class="menu hiden">
           <div class="slide-menu">
-            <img src="./assets/images/icon-close.svg" alt="icon close">
+            <img class="icon-close" src="./assets/images/icon-close.svg" alt="icon close">
             <ul>
               <li><a href="#">Collections</a></li>
               <li><a href="#">Men</a></li>
@@ -37,47 +39,74 @@
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
-          </nav>
+        </nav>
 
-          </div>
-          <div class="cart-avatar--group">
-            <div class="btnCart">
-              <img src="./assets/images/icon-cart.svg" alt="cart icon">
-              <div class="cart-count"></div>
-            </div>
-    
-            <img class="avatar"src="./assets/images/image-avatar.png" alt=" image avatar">
-    
-          </div>
+      </div>
+      <div class="cart-avatar--group">
+        <div class="btn-cart">
+          <img src="./assets/images/icon-cart.svg" alt="cart icon">
+          <div class="cart-count">3</div>
+        </div>
+        <img class="avatar" src="./assets/images/image-avatar.png" alt=" image avatar">
+      </div>
+      <div class="cart">
+        <div class = "cart__header"></div>
+        <div class = "cart__products"></div>
+        <div class = "cart__msg">Your cart is empty</div>
+        <div class = "cart__checkout"></div>
 
       </div>
 
-      
-    </header>
   </div>
-  <!--
-  <main>
-    <section>
+  </header>
+  </div>
+  <div class="content">
+    <section class="lightbox">
+      <img src="./assets/images/image-product-1.jpg" alt="">
+
+      <div class="previous arrow">
+        <img src="./assets/images/icon-previous.svg" alt="icon previous">
+      </div>
+      <div class="next arrow">
+        <img src="./assets/images/icon-next.svg" alt="icon previous">
+      </div>
+    </section>
+  </div>
+
+  <section class="product">
+    <div>
       <h1>
-        <span>Sneaker Company</span>
-        <span>Fall Limited Edition
+        <span class="product__name">Sneaker Company</span><br>
+        <span class="product__title">Fall Limited Edition
           Sneaker</span>
       </h1>
-      <p>
+      <p class="product__description">
         These low-profile sneakers are your perfect casual wear companion. Featuring a
         durable rubber outer sole, they’ll withstand everything the weather can offer.
       </p>
-      <div>
-        <span>$125.00</span>
-        <span> 50%</span>
-        <span>$250.00</span>
+    </div>
+    <div class="price__wrapper">
+      <div class="price__group">
+        <div class="price">$125.00</div>
+        <div class="discount">50%</div>
       </div>
+      <div class="old__price">$250.00</div>
+    </div>
+    <div class="count__btn--group">
+      <div class="count__wrapper">
+        <img id="btn__minus" src="./assets/images/icon-minus.svg" alt="icon minus">
+        <div class="counter">0</div>
+        <img id="btn__plus" src="./assets/images/icon-plus.svg" alt="icon plus">
+      </div>
+    </div>
 
-      0
-      <button> Add to cart</button>
-    </section>
+    <div class="container__btn">
+      <button class="btn">Add to cart</button>
+    </div>
+  </section>
   </main>
 
+  <script src="./assets/javaScript/script.js"></script>
 
 </body>
 
